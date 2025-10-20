@@ -1,0 +1,1 @@
+﻿TF-IDF captures term rarity. Cosine similarity measures the angle between vectors.

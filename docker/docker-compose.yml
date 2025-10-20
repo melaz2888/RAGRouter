@@ -8,11 +8,12 @@ services:
     environment:
       - OLLAMA_NUM_GPU=0
   chroma:
-    image: chromadb/chroma:latest
+    image: chromadb/chroma:0.5.11   # instead of :latest for compatibility 
     container_name: chroma
     restart: unless-stopped
     ports: ["8000:8000"]
     volumes: ["chroma:/chroma"]
+
 volumes:
   ollama: {}
   chroma: {}

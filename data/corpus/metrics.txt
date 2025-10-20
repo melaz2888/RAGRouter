@@ -1,0 +1,1 @@
+﻿RMSE is the square root of the mean of squared errors. It penalizes large errors more than MAE.
