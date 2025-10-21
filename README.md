@@ -99,11 +99,7 @@ POST /ask
 
 ## Model and Data
 
-The released router is pre-trained on a balanced mix of:
-
-* FiQA (financial QA)
-* HotpotQA (multi-hop reasoning)
-* Energy-domain documents (internal)
+The released router is pre-trained on a mix of ML and generic questions
 
 Labels {direct, needs-RAG} were generated via heuristics and manual validation. Inference and evaluation are entirely CPU-based.
 
