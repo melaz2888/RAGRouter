@@ -1,0 +1,6 @@
+Project Cosmos — Release 1.8 (2024-10-20)
+
+Chunking: length 512 tokens, stride 96 tokens.
+Embedding model: Alibaba-NLP/gte-small.
+Vector store: Chroma collection 'kb_cosmos' with metric 'l2'.
+Notes: This document describes Cosmos's retrieval defaults and deployment parameters on CPU.

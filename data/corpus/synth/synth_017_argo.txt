@@ -1,0 +1,6 @@
+Project Argo — Release 2.2 (2024-05-27)
+
+Chunking: length 512 tokens, stride 96 tokens.
+Embedding model: microsoft/mpnet-base.
+Vector store: Chroma collection 'kb_argo' with metric 'l2'.
+Notes: This document describes Argo's retrieval defaults and deployment parameters on CPU.

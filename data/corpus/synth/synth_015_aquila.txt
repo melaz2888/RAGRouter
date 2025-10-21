@@ -1,0 +1,6 @@
+Project Aquila — Release 3.8 (2024-03-25)
+
+Chunking: length 384 tokens, stride 128 tokens.
+Embedding model: sentence-transformers/all-MiniLM-L6-v2.
+Vector store: Chroma collection 'kb_aquila' with metric 'cosine'.
+Notes: This document describes Aquila's retrieval defaults and deployment parameters on CPU.

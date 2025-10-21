@@ -161,7 +161,7 @@ def main():
     parser = argparse.ArgumentParser("Ingest *.txt into Chroma (CPU-only).")
     parser.add_argument("--collection", default="kb_main",
                     help="Chroma collection name (>=3 chars, default: kb_main)")
-    parser.add_argument("--corpus", required=True, help="Corpus directory containing *.txt (recursive).")
+    parser.add_argument("--corpus", default = "data/corpus/synth", help="Corpus directory containing *.txt (recursive). Default: data/corpus/synth")
     # parser.add_argument("--collection", default="kb", help="Chroma collection name (default: kb).")
     parser.add_argument("--model", default="intfloat/e5-small", help="Sentence-Transformers model name.")
     parser.add_argument("--batch-size", type=int, default=128, help="Embedding batch size (CPU).")

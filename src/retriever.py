@@ -12,7 +12,7 @@ import chromadb
 from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
 
-from .types import Passage
+from .rag_types import Passage
 from .config import CHROMA_HOST, CHROMA_PORT, CHROMA_COLLECTION
 
 # Use the same embedding model as ingestion (fallback to e5-small)

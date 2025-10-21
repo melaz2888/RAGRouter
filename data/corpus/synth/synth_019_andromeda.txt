@@ -1,0 +1,6 @@
+Project Andromeda — Release 1.6 (2024-07-01)
+
+Chunking: length 640 tokens, stride 160 tokens.
+Embedding model: Alibaba-NLP/gte-small.
+Vector store: Chroma collection 'kb_andromeda' with metric 'cosine'.
+Notes: This document describes Andromeda's retrieval defaults and deployment parameters on CPU.

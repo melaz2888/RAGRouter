@@ -1,0 +1,6 @@
+Project Pulsar — Release 1.2 (2024-07-17)
+
+Chunking: length 384 tokens, stride 128 tokens.
+Embedding model: BAAI/bge-small-en-v1.5.
+Vector store: Chroma collection 'kb_pulsar' with metric 'l2'.
+Notes: This document describes Pulsar's retrieval defaults and deployment parameters on CPU.

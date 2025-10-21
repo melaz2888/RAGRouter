@@ -1,0 +1,6 @@
+Project Perseus — Release 3.4 (2024-06-28)
+
+Chunking: length 256 tokens, stride 160 tokens.
+Embedding model: microsoft/mpnet-base.
+Vector store: Chroma collection 'kb_perseus' with metric 'dot'.
+Notes: This document describes Perseus's retrieval defaults and deployment parameters on CPU.

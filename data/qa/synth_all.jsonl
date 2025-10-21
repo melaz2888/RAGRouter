@@ -1,0 +1,300 @@
+{"id": "r151", "question": "What is the chunk length used by Project Cygnus?", "answer": "384 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "r064", "question": "What Chroma collection does Project Pulsar use?", "answer": "kb_pulsar.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "r089", "question": "What does the documentation of Project Nebula cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "r100", "question": "What is the default retrieval store for Project Cosmos?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "g035", "question": "What is attention?", "answer": "Attention is a commonly used concept or technique.", "domain": "general"}
+{"id": "r014", "question": "What Chroma collection does Project Lyra use?", "answer": "kb_lyra.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "r113", "question": "Which embedding model is configured for Project Draco?", "answer": "BAAI/bge-small-en-v1.5.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "r061", "question": "What is the chunk length used by Project Pulsar?", "answer": "384 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "g096", "question": "What is cache?", "answer": "Cache is a commonly used concept or technique.", "domain": "general"}
+{"id": "r174", "question": "What Chroma collection does Project Perseus use?", "answer": "kb_perseus.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "g080", "question": "What is random forest?", "answer": "Random forest is a commonly used concept or technique.", "domain": "general"}
+{"id": "r123", "question": "Which embedding model is configured for Project Hydra?", "answer": "BAAI/bge-small-en-v1.5.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r028", "question": "Is Project Vega described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "g061", "question": "What is leader election?", "answer": "Leader election is a commonly used concept or technique.", "domain": "general"}
+{"id": "g097", "question": "What is MAE?", "answer": "Mean Absolute Error, the average absolute difference.", "domain": "general"}
+{"id": "g082", "question": "What is embedding?", "answer": "Embedding is a commonly used concept or technique.", "domain": "general"}
+{"id": "r082", "question": "What stride does Project Nebula use for chunking?", "answer": "96 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "r129", "question": "What does the documentation of Project Hydra cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "g093", "question": "What is cross-validation?", "answer": "Cross-validation is a commonly used concept or technique.", "domain": "general"}
+{"id": "g011", "question": "What is NoSQL?", "answer": "Nosql is a commonly used concept or technique.", "domain": "general"}
+{"id": "g081", "question": "What is BM25?", "answer": "A ranking function for document retrieval.", "domain": "general"}
+{"id": "r038", "question": "Is Project Altair described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "r095", "question": "What similarity metric is set for Project Cosmos?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "g095", "question": "What is decoder?", "answer": "Decoder is a commonly used concept or technique.", "domain": "general"}
+{"id": "g043", "question": "What is data warehouse?", "answer": "Data warehouse is a commonly used concept or technique.", "domain": "general"}
+{"id": "r098", "question": "Is Project Cosmos described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "r049", "question": "What does the documentation of Project Sirius cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "g071", "question": "What is precision?", "answer": "Precision is a commonly used concept or technique.", "domain": "general"}
+{"id": "g048", "question": "What is sharding?", "answer": "Sharding is a commonly used concept or technique.", "domain": "general"}
+{"id": "r128", "question": "Is Project Hydra described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r001", "question": "What is the chunk length used by Project Orion?", "answer": "640 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "r178", "question": "Is Project Perseus described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "r016", "question": "What is the release date of Project Lyra 2.2?", "answer": "2024-02-12.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "r047", "question": "Which release version is documented for Project Sirius?", "answer": "2.8.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "r176", "question": "What is the release date of Project Perseus 3.4?", "answer": "2024-06-28.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "g003", "question": "What is MAE?", "answer": "Mean Absolute Error, the average absolute difference.", "domain": "general"}
+{"id": "r172", "question": "What stride does Project Perseus use for chunking?", "answer": "160 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "g017", "question": "What is Docker?", "answer": "Docker is a commonly used concept or technique.", "domain": "general"}
+{"id": "r132", "question": "What stride does Project Pegasus use for chunking?", "answer": "64 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "g007", "question": "What is canary release?", "answer": "Canary release is a commonly used concept or technique.", "domain": "general"}
+{"id": "r195", "question": "What similarity metric is set for Project Helios?", "answer": "cosine.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "r074", "question": "What Chroma collection does Project Quasar use?", "answer": "kb_quasar.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r043", "question": "Which embedding model is configured for Project Sirius?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "r196", "question": "What is the release date of Project Helios 2.8?", "answer": "2024-08-02.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "r011", "question": "What is the chunk length used by Project Lyra?", "answer": "256 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "r080", "question": "What is the default retrieval store for Project Quasar?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r099", "question": "What does the documentation of Project Cosmos cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "g085", "question": "What is observability?", "answer": "Observability is a commonly used concept or technique.", "domain": "general"}
+{"id": "g025", "question": "What is R-squared?", "answer": "Coefficient of determination indicating fit quality.", "domain": "general"}
+{"id": "r025", "question": "What similarity metric is set for Project Vega?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "r188", "question": "Is Project Andromeda described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "r004", "question": "What Chroma collection does Project Orion use?", "answer": "kb_orion.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "g030", "question": "What is regularization?", "answer": "Regularization is a commonly used concept or technique.", "domain": "general"}
+{"id": "r198", "question": "Is Project Helios described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "r096", "question": "What is the release date of Project Cosmos 1.8?", "answer": "2024-10-20.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "r058", "question": "Is Project Nova described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "g024", "question": "What is container?", "answer": "Container is a commonly used concept or technique.", "domain": "general"}
+{"id": "r042", "question": "What stride does Project Sirius use for chunking?", "answer": "64 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "r026", "question": "What is the release date of Project Vega 3.4?", "answer": "2024-03-13.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "g068", "question": "What is LRU cache?", "answer": "Lru cache is a commonly used concept or technique.", "domain": "general"}
+{"id": "r102", "question": "What stride does Project Phoenix use for chunking?", "answer": "160 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "g073", "question": "What is stationarity?", "answer": "Stationarity is a commonly used concept or technique.", "domain": "general"}
+{"id": "r073", "question": "Which embedding model is configured for Project Quasar?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r110", "question": "What is the default retrieval store for Project Phoenix?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r109", "question": "What does the documentation of Project Phoenix cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r005", "question": "What similarity metric is set for Project Orion?", "answer": "cosine.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "g056", "question": "What is HTTP?", "answer": "HTTP is a commonly used concept or technique.", "domain": "general"}
+{"id": "g070", "question": "What is tokenization?", "answer": "Tokenization is a commonly used concept or technique.", "domain": "general"}
+{"id": "r183", "question": "Which embedding model is configured for Project Andromeda?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "r135", "question": "What similarity metric is set for Project Pegasus?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "r191", "question": "What is the chunk length used by Project Helios?", "answer": "640 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "r054", "question": "What Chroma collection does Project Nova use?", "answer": "kb_nova.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "r032", "question": "What stride does Project Altair use for chunking?", "answer": "128 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "g029", "question": "What is throughput?", "answer": "Throughput is a commonly used concept or technique.", "domain": "general"}
+{"id": "r190", "question": "What is the default retrieval store for Project Andromeda?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "r136", "question": "What is the release date of Project Pegasus 2.6?", "answer": "2024-02-24.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "r092", "question": "What stride does Project Cosmos use for chunking?", "answer": "96 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "g019", "question": "What is AUC?", "answer": "AUC is a commonly used concept or technique.", "domain": "general"}
+{"id": "r192", "question": "What stride does Project Helios use for chunking?", "answer": "160 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "g020", "question": "What is PCA?", "answer": "PCA is a commonly used concept or technique.", "domain": "general"}
+{"id": "r152", "question": "What stride does Project Cygnus use for chunking?", "answer": "160 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "r039", "question": "What does the documentation of Project Altair cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "r044", "question": "What Chroma collection does Project Sirius use?", "answer": "kb_sirius.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "g088", "question": "What is rate limiting?", "answer": "Rate limiting is a commonly used concept or technique.", "domain": "general"}
+{"id": "r118", "question": "Is Project Draco described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "r045", "question": "What similarity metric is set for Project Sirius?", "answer": "dot.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "r119", "question": "What does the documentation of Project Draco cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "g010", "question": "What is JSON?", "answer": "JSON is a commonly used concept or technique.", "domain": "general"}
+{"id": "r094", "question": "What Chroma collection does Project Cosmos use?", "answer": "kb_cosmos.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "r084", "question": "What Chroma collection does Project Nebula use?", "answer": "kb_nebula.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "r130", "question": "What is the default retrieval store for Project Hydra?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r168", "question": "Is Project Argo described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "g054", "question": "What is load balancer?", "answer": "Load balancer is a commonly used concept or technique.", "domain": "general"}
+{"id": "g018", "question": "What is microservice?", "answer": "Microservice is a commonly used concept or technique.", "domain": "general"}
+{"id": "r175", "question": "What similarity metric is set for Project Perseus?", "answer": "dot.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "r009", "question": "What does the documentation of Project Orion cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "r131", "question": "What is the chunk length used by Project Pegasus?", "answer": "384 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "r048", "question": "Is Project Sirius described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "r059", "question": "What does the documentation of Project Nova cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "r081", "question": "What is the chunk length used by Project Nebula?", "answer": "256 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "g032", "question": "What is seasonality?", "answer": "Seasonality is a commonly used concept or technique.", "domain": "general"}
+{"id": "r115", "question": "What similarity metric is set for Project Draco?", "answer": "cosine.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "r062", "question": "What stride does Project Pulsar use for chunking?", "answer": "128 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "g069", "question": "What is blue/green deployment?", "answer": "Blue/green deployment is a commonly used concept or technique.", "domain": "general"}
+{"id": "r010", "question": "What is the default retrieval store for Project Orion?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "r180", "question": "What is the default retrieval store for Project Perseus?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "r153", "question": "Which embedding model is configured for Project Cygnus?", "answer": "microsoft/mpnet-base.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "r120", "question": "What is the default retrieval store for Project Draco?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "g026", "question": "What is tracing?", "answer": "Tracing is a commonly used concept or technique.", "domain": "general"}
+{"id": "g066", "question": "What is retry policy?", "answer": "Retry policy is a commonly used concept or technique.", "domain": "general"}
+{"id": "g078", "question": "What is moving average?", "answer": "Moving average is a commonly used concept or technique.", "domain": "general"}
+{"id": "r108", "question": "Is Project Phoenix described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "g079", "question": "What is ARIMA?", "answer": "ARIMA is a commonly used concept or technique.", "domain": "general"}
+{"id": "g042", "question": "What is TF-IDF?", "answer": "Term weighting combining frequency and inverse document frequency.", "domain": "general"}
+{"id": "r134", "question": "What Chroma collection does Project Pegasus use?", "answer": "kb_pegasus.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "g009", "question": "What is data lake?", "answer": "Data lake is a commonly used concept or technique.", "domain": "general"}
+{"id": "r156", "question": "What is the release date of Project Cygnus 1.0?", "answer": "2024-04-26.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "r140", "question": "What is the default retrieval store for Project Pegasus?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "g098", "question": "What is TCP?", "answer": "TCP is a commonly used concept or technique.", "domain": "general"}
+{"id": "r075", "question": "What similarity metric is set for Project Quasar?", "answer": "dot.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r147", "question": "Which release version is documented for Project Aquila?", "answer": "3.8.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "g058", "question": "What is TLS?", "answer": "TLS is a commonly used concept or technique.", "domain": "general"}
+{"id": "r066", "question": "What is the release date of Project Pulsar 1.2?", "answer": "2024-07-17.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "g013", "question": "What is batch size?", "answer": "Batch size is a commonly used concept or technique.", "domain": "general"}
+{"id": "g099", "question": "What is logging?", "answer": "Logging is a commonly used concept or technique.", "domain": "general"}
+{"id": "r181", "question": "What is the chunk length used by Project Andromeda?", "answer": "640 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "r071", "question": "What is the chunk length used by Project Quasar?", "answer": "384 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "g049", "question": "What is REST API?", "answer": "REST API is a commonly used concept or technique.", "domain": "general"}
+{"id": "g064", "question": "What is F1 score?", "answer": "F1 score is a commonly used concept or technique.", "domain": "general"}
+{"id": "g015", "question": "What is metrics?", "answer": "Metrics is a commonly used concept or technique.", "domain": "general"}
+{"id": "g028", "question": "What is epoch?", "answer": "Epoch is a commonly used concept or technique.", "domain": "general"}
+{"id": "r127", "question": "Which release version is documented for Project Hydra?", "answer": "1.4.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r126", "question": "What is the release date of Project Hydra 1.4?", "answer": "2024-01-23.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r142", "question": "What stride does Project Aquila use for chunking?", "answer": "128 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "r124", "question": "What Chroma collection does Project Hydra use?", "answer": "kb_hydra.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r111", "question": "What is the chunk length used by Project Draco?", "answer": "640 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "r199", "question": "What does the documentation of Project Helios cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "g045", "question": "What is SLA?", "answer": "SLA is a commonly used concept or technique.", "domain": "general"}
+{"id": "r046", "question": "What is the release date of Project Sirius 2.8?", "answer": "2024-05-15.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "g002", "question": "What is cache?", "answer": "Cache is a commonly used concept or technique.", "domain": "general"}
+{"id": "r169", "question": "What does the documentation of Project Argo cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "r013", "question": "Which embedding model is configured for Project Lyra?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "g005", "question": "What is logging?", "answer": "Logging is a commonly used concept or technique.", "domain": "general"}
+{"id": "r031", "question": "What is the chunk length used by Project Altair?", "answer": "640 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "r072", "question": "What stride does Project Quasar use for chunking?", "answer": "160 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r090", "question": "What is the default retrieval store for Project Nebula?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "r037", "question": "Which release version is documented for Project Altair?", "answer": "1.6.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "r056", "question": "What is the release date of Project Nova 3.0?", "answer": "2024-06-16.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "r104", "question": "What Chroma collection does Project Phoenix use?", "answer": "kb_phoenix.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r112", "question": "What stride does Project Draco use for chunking?", "answer": "96 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "r154", "question": "What Chroma collection does Project Cygnus use?", "answer": "kb_cygnus.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "r050", "question": "What is the default retrieval store for Project Sirius?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "r018", "question": "Is Project Lyra described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "g091", "question": "What is availability?", "answer": "Availability is a commonly used concept or technique.", "domain": "general"}
+{"id": "g016", "question": "What is dead letter queue?", "answer": "Dead letter queue is a commonly used concept or technique.", "domain": "general"}
+{"id": "r077", "question": "Which release version is documented for Project Quasar?", "answer": "2.4.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r008", "question": "Is Project Orion described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "r040", "question": "What is the default retrieval store for Project Altair?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "r145", "question": "What similarity metric is set for Project Aquila?", "answer": "cosine.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "g084", "question": "What is linear regression?", "answer": "Linear regression is a commonly used concept or technique.", "domain": "general"}
+{"id": "r051", "question": "What is the chunk length used by Project Nova?", "answer": "384 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "g062", "question": "What is dropout?", "answer": "Dropout is a commonly used concept or technique.", "domain": "general"}
+{"id": "r029", "question": "What does the documentation of Project Vega cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "g075", "question": "What is SLO?", "answer": "SLO is a commonly used concept or technique.", "domain": "general"}
+{"id": "r193", "question": "Which embedding model is configured for Project Helios?", "answer": "intfloat/e5-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "g065", "question": "What is cosine similarity?", "answer": "Cosine similarity is a commonly used concept or technique.", "domain": "general"}
+{"id": "r097", "question": "Which release version is documented for Project Cosmos?", "answer": "1.8.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "g055", "question": "What is time series?", "answer": "Time series is a commonly used concept or technique.", "domain": "general"}
+{"id": "r144", "question": "What Chroma collection does Project Aquila use?", "answer": "kb_aquila.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "r157", "question": "Which release version is documented for Project Cygnus?", "answer": "1.0.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "g036", "question": "What is learning rate?", "answer": "Learning rate is a commonly used concept or technique.", "domain": "general"}
+{"id": "r035", "question": "What similarity metric is set for Project Altair?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "r133", "question": "Which embedding model is configured for Project Pegasus?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "r067", "question": "Which release version is documented for Project Pulsar?", "answer": "1.2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "g004", "question": "What is TCP?", "answer": "TCP is a commonly used concept or technique.", "domain": "general"}
+{"id": "g006", "question": "What is Kubernetes?", "answer": "Kubernetes is a commonly used concept or technique.", "domain": "general"}
+{"id": "g034", "question": "What is idempotency?", "answer": "Idempotency is a commonly used concept or technique.", "domain": "general"}
+{"id": "r079", "question": "What does the documentation of Project Quasar cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r041", "question": "What is the chunk length used by Project Sirius?", "answer": "512 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_005_sirius.txt"}
+{"id": "g040", "question": "What is ROC curve?", "answer": "Roc curve is a commonly used concept or technique.", "domain": "general"}
+{"id": "r137", "question": "Which release version is documented for Project Pegasus?", "answer": "2.6.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "r161", "question": "What is the chunk length used by Project Argo?", "answer": "512 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "r022", "question": "What stride does Project Vega use for chunking?", "answer": "64 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "r170", "question": "What is the default retrieval store for Project Argo?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "r125", "question": "What similarity metric is set for Project Hydra?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "g038", "question": "What is standardization?", "answer": "Standardization is a commonly used concept or technique.", "domain": "general"}
+{"id": "r121", "question": "What is the chunk length used by Project Hydra?", "answer": "384 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r020", "question": "What is the default retrieval store for Project Lyra?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "r052", "question": "What stride does Project Nova use for chunking?", "answer": "64 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "g039", "question": "What is encoder?", "answer": "Encoder is a commonly used concept or technique.", "domain": "general"}
+{"id": "r149", "question": "What does the documentation of Project Aquila cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "g033", "question": "What is partition tolerance?", "answer": "Partition tolerance is a commonly used concept or technique.", "domain": "general"}
+{"id": "r184", "question": "What Chroma collection does Project Andromeda use?", "answer": "kb_andromeda.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "g041", "question": "What is UDP?", "answer": "UDP is a commonly used concept or technique.", "domain": "general"}
+{"id": "r138", "question": "Is Project Pegasus described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "r117", "question": "Which release version is documented for Project Draco?", "answer": "3.2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "r091", "question": "What is the chunk length used by Project Cosmos?", "answer": "512 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "r003", "question": "Which embedding model is configured for Project Orion?", "answer": "intfloat/e5-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "r019", "question": "What does the documentation of Project Lyra cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "r002", "question": "What stride does Project Orion use for chunking?", "answer": "160 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "r085", "question": "What similarity metric is set for Project Nebula?", "answer": "dot.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "g023", "question": "What is normalization?", "answer": "Normalization is a commonly used concept or technique.", "domain": "general"}
+{"id": "r177", "question": "Which release version is documented for Project Perseus?", "answer": "3.4.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "r063", "question": "Which embedding model is configured for Project Pulsar?", "answer": "BAAI/bge-small-en-v1.5.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "r186", "question": "What is the release date of Project Andromeda 1.6?", "answer": "2024-07-01.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "r012", "question": "What stride does Project Lyra use for chunking?", "answer": "128 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "g046", "question": "What is ELT?", "answer": "ELT is a commonly used concept or technique.", "domain": "general"}
+{"id": "r122", "question": "What stride does Project Hydra use for chunking?", "answer": "96 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_013_hydra.txt"}
+{"id": "r155", "question": "What similarity metric is set for Project Cygnus?", "answer": "dot.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "r197", "question": "Which release version is documented for Project Helios?", "answer": "2.8.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "r164", "question": "What Chroma collection does Project Argo use?", "answer": "kb_argo.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "r101", "question": "What is the chunk length used by Project Phoenix?", "answer": "512 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r159", "question": "What does the documentation of Project Cygnus cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "g031", "question": "What is one-hot encoding?", "answer": "One-hot encoding is a commonly used concept or technique.", "domain": "general"}
+{"id": "r070", "question": "What is the default retrieval store for Project Pulsar?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "r114", "question": "What Chroma collection does Project Draco use?", "answer": "kb_draco.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "g022", "question": "What is recall?", "answer": "Recall is a commonly used concept or technique.", "domain": "general"}
+{"id": "r065", "question": "What similarity metric is set for Project Pulsar?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "r105", "question": "What similarity metric is set for Project Phoenix?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r141", "question": "What is the chunk length used by Project Aquila?", "answer": "384 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "r068", "question": "Is Project Pulsar described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "r162", "question": "What stride does Project Argo use for chunking?", "answer": "96 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "g001", "question": "What is decoder?", "answer": "Decoder is a commonly used concept or technique.", "domain": "general"}
+{"id": "r116", "question": "What is the release date of Project Draco 3.2?", "answer": "2024-12-22.", "domain": "synth", "source": "data\\corpus\\synth\\synth_012_draco.txt"}
+{"id": "r057", "question": "Which release version is documented for Project Nova?", "answer": "3.0.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "r185", "question": "What similarity metric is set for Project Andromeda?", "answer": "cosine.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "r024", "question": "What Chroma collection does Project Vega use?", "answer": "kb_vega.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "r182", "question": "What stride does Project Andromeda use for chunking?", "answer": "160 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "g087", "question": "What is gradient boosting?", "answer": "Gradient boosting is a commonly used concept or technique.", "domain": "general"}
+{"id": "g051", "question": "What is DNS?", "answer": "DNS is a commonly used concept or technique.", "domain": "general"}
+{"id": "r179", "question": "What does the documentation of Project Perseus cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "g059", "question": "What is replication?", "answer": "Replication is a commonly used concept or technique.", "domain": "general"}
+{"id": "g027", "question": "What is underfitting?", "answer": "Underfitting is a commonly used concept or technique.", "domain": "general"}
+{"id": "g057", "question": "What is backpressure?", "answer": "Backpressure is a commonly used concept or technique.", "domain": "general"}
+{"id": "g021", "question": "What is feature flag?", "answer": "Feature flag is a commonly used concept or technique.", "domain": "general"}
+{"id": "g094", "question": "What is GraphQL?", "answer": "Graphql is a commonly used concept or technique.", "domain": "general"}
+{"id": "g090", "question": "What is logistic regression?", "answer": "Logistic regression is a commonly used concept or technique.", "domain": "general"}
+{"id": "r173", "question": "Which embedding model is configured for Project Perseus?", "answer": "microsoft/mpnet-base.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "r107", "question": "Which release version is documented for Project Phoenix?", "answer": "2.0.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r160", "question": "What is the default retrieval store for Project Cygnus?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "g089", "question": "What is DBSCAN?", "answer": "DBSCAN is a commonly used concept or technique.", "domain": "general"}
+{"id": "r055", "question": "What similarity metric is set for Project Nova?", "answer": "cosine.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "r194", "question": "What Chroma collection does Project Helios use?", "answer": "kb_helios.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "g050", "question": "What is lag feature?", "answer": "Lag feature is a commonly used concept or technique.", "domain": "general"}
+{"id": "g067", "question": "What is hashing?", "answer": "Hashing is a commonly used concept or technique.", "domain": "general"}
+{"id": "r021", "question": "What is the chunk length used by Project Vega?", "answer": "256 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "g072", "question": "What is Bloom filter?", "answer": "Bloom filter is a commonly used concept or technique.", "domain": "general"}
+{"id": "r103", "question": "Which embedding model is configured for Project Phoenix?", "answer": "sentence-transformers/all-MiniLM-L6-v2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r189", "question": "What does the documentation of Project Andromeda cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "g008", "question": "What is RMSE?", "answer": "Root Mean Square Error, a measure of prediction error.", "domain": "general"}
+{"id": "r167", "question": "Which release version is documented for Project Argo?", "answer": "2.2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "g092", "question": "What is ETL?", "answer": "ETL is a commonly used concept or technique.", "domain": "general"}
+{"id": "r027", "question": "Which release version is documented for Project Vega?", "answer": "3.4.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "r033", "question": "Which embedding model is configured for Project Altair?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "g052", "question": "What is pub/sub?", "answer": "Pub/sub is a commonly used concept or technique.", "domain": "general"}
+{"id": "r017", "question": "Which release version is documented for Project Lyra?", "answer": "2.2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "r106", "question": "What is the release date of Project Phoenix 2.0?", "answer": "2024-11-21.", "domain": "synth", "source": "data\\corpus\\synth\\synth_011_phoenix.txt"}
+{"id": "r023", "question": "Which embedding model is configured for Project Vega?", "answer": "sentence-transformers/all-MiniLM-L6-v2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "g100", "question": "What is Kubernetes?", "answer": "Kubernetes is a commonly used concept or technique.", "domain": "general"}
+{"id": "r163", "question": "Which embedding model is configured for Project Argo?", "answer": "microsoft/mpnet-base.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "r069", "question": "What does the documentation of Project Pulsar cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_007_pulsar.txt"}
+{"id": "r158", "question": "Is Project Cygnus described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_016_cygnus.txt"}
+{"id": "r015", "question": "What similarity metric is set for Project Lyra?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_002_lyra.txt"}
+{"id": "r083", "question": "Which embedding model is configured for Project Nebula?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "g086", "question": "What is SQL?", "answer": "SQL is a commonly used concept or technique.", "domain": "general"}
+{"id": "r088", "question": "Is Project Nebula described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "r166", "question": "What is the release date of Project Argo 2.2?", "answer": "2024-05-27.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "r034", "question": "What Chroma collection does Project Altair use?", "answer": "kb_altair.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "g047", "question": "What is overfitting?", "answer": "Overfitting is a commonly used concept or technique.", "domain": "general"}
+{"id": "r053", "question": "Which embedding model is configured for Project Nova?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "r200", "question": "What is the default retrieval store for Project Helios?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_020_helios.txt"}
+{"id": "g076", "question": "What is transformer?", "answer": "Transformer is a commonly used concept or technique.", "domain": "general"}
+{"id": "r086", "question": "What is the release date of Project Nebula 3.6?", "answer": "2024-09-19.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "r171", "question": "What is the chunk length used by Project Perseus?", "answer": "256 tokens.", "domain": "synth", "source": "data\\corpus\\synth\\synth_018_perseus.txt"}
+{"id": "r006", "question": "What is the release date of Project Orion 1.0?", "answer": "2024-01-11.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "g012", "question": "What is message queue?", "answer": "Message queue is a commonly used concept or technique.", "domain": "general"}
+{"id": "r165", "question": "What similarity metric is set for Project Argo?", "answer": "l2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_017_argo.txt"}
+{"id": "g083", "question": "What is orchestrator?", "answer": "Orchestrator is a commonly used concept or technique.", "domain": "general"}
+{"id": "r187", "question": "Which release version is documented for Project Andromeda?", "answer": "1.6.", "domain": "synth", "source": "data\\corpus\\synth\\synth_019_andromeda.txt"}
+{"id": "r036", "question": "What is the release date of Project Altair 1.6?", "answer": "2024-04-14.", "domain": "synth", "source": "data\\corpus\\synth\\synth_004_altair.txt"}
+{"id": "r076", "question": "What is the release date of Project Quasar 2.4?", "answer": "2024-08-18.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "g053", "question": "What is consistency?", "answer": "Consistency is a commonly used concept or technique.", "domain": "general"}
+{"id": "g074", "question": "What is circuit breaker?", "answer": "Circuit breaker is a commonly used concept or technique.", "domain": "general"}
+{"id": "g044", "question": "What is SLI?", "answer": "SLI is a commonly used concept or technique.", "domain": "general"}
+{"id": "r060", "question": "What is the default retrieval store for Project Nova?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_006_nova.txt"}
+{"id": "r148", "question": "Is Project Aquila described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "r146", "question": "What is the release date of Project Aquila 3.8?", "answer": "2024-03-25.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "r139", "question": "What does the documentation of Project Pegasus cover?", "answer": "Retrieval defaults and deployment parameters.", "domain": "synth", "source": "data\\corpus\\synth\\synth_014_pegasus.txt"}
+{"id": "r150", "question": "What is the default retrieval store for Project Aquila?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "g060", "question": "What is YAML?", "answer": "YAML is a commonly used concept or technique.", "domain": "general"}
+{"id": "g063", "question": "What is confusion matrix?", "answer": "Confusion matrix is a commonly used concept or technique.", "domain": "general"}
+{"id": "r143", "question": "Which embedding model is configured for Project Aquila?", "answer": "sentence-transformers/all-MiniLM-L6-v2.", "domain": "synth", "source": "data\\corpus\\synth\\synth_015_aquila.txt"}
+{"id": "r087", "question": "Which release version is documented for Project Nebula?", "answer": "3.6.", "domain": "synth", "source": "data\\corpus\\synth\\synth_009_nebula.txt"}
+{"id": "r078", "question": "Is Project Quasar described as CPU-based deployment?", "answer": "Yes, CPU-based.", "domain": "synth", "source": "data\\corpus\\synth\\synth_008_quasar.txt"}
+{"id": "r030", "question": "What is the default retrieval store for Project Vega?", "answer": "Chroma.", "domain": "synth", "source": "data\\corpus\\synth\\synth_003_vega.txt"}
+{"id": "g077", "question": "What is k-means?", "answer": "K-means is a commonly used concept or technique.", "domain": "general"}
+{"id": "r093", "question": "Which embedding model is configured for Project Cosmos?", "answer": "Alibaba-NLP/gte-small.", "domain": "synth", "source": "data\\corpus\\synth\\synth_010_cosmos.txt"}
+{"id": "r007", "question": "Which release version is documented for Project Orion?", "answer": "1.0.", "domain": "synth", "source": "data\\corpus\\synth\\synth_001_orion.txt"}
+{"id": "g037", "question": "What is latency?", "answer": "Latency is a commonly used concept or technique.", "domain": "general"}
+{"id": "g014", "question": "What is CDN?", "answer": "CDN is a commonly used concept or technique.", "domain": "general"}

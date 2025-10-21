@@ -1,0 +1,300 @@
+{"id": "r151", "question": "What is the chunk length used by Project Cygnus?", "route": "needs-RAG"}
+{"id": "r064", "question": "What Chroma collection does Project Pulsar use?", "route": "needs-RAG"}
+{"id": "r089", "question": "What does the documentation of Project Nebula cover?", "route": "needs-RAG"}
+{"id": "r100", "question": "What is the default retrieval store for Project Cosmos?", "route": "needs-RAG"}
+{"id": "g035", "question": "What is attention?", "route": "direct"}
+{"id": "r014", "question": "What Chroma collection does Project Lyra use?", "route": "needs-RAG"}
+{"id": "r113", "question": "Which embedding model is configured for Project Draco?", "route": "needs-RAG"}
+{"id": "r061", "question": "What is the chunk length used by Project Pulsar?", "route": "needs-RAG"}
+{"id": "g096", "question": "What is cache?", "route": "direct"}
+{"id": "r174", "question": "What Chroma collection does Project Perseus use?", "route": "needs-RAG"}
+{"id": "g080", "question": "What is random forest?", "route": "direct"}
+{"id": "r123", "question": "Which embedding model is configured for Project Hydra?", "route": "needs-RAG"}
+{"id": "r028", "question": "Is Project Vega described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "g061", "question": "What is leader election?", "route": "direct"}
+{"id": "g097", "question": "What is MAE?", "route": "direct"}
+{"id": "g082", "question": "What is embedding?", "route": "direct"}
+{"id": "r082", "question": "What stride does Project Nebula use for chunking?", "route": "needs-RAG"}
+{"id": "r129", "question": "What does the documentation of Project Hydra cover?", "route": "needs-RAG"}
+{"id": "g093", "question": "What is cross-validation?", "route": "direct"}
+{"id": "g011", "question": "What is NoSQL?", "route": "direct"}
+{"id": "g081", "question": "What is BM25?", "route": "direct"}
+{"id": "r038", "question": "Is Project Altair described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r095", "question": "What similarity metric is set for Project Cosmos?", "route": "needs-RAG"}
+{"id": "g095", "question": "What is decoder?", "route": "direct"}
+{"id": "g043", "question": "What is data warehouse?", "route": "direct"}
+{"id": "r098", "question": "Is Project Cosmos described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r049", "question": "What does the documentation of Project Sirius cover?", "route": "needs-RAG"}
+{"id": "g071", "question": "What is precision?", "route": "direct"}
+{"id": "g048", "question": "What is sharding?", "route": "direct"}
+{"id": "r128", "question": "Is Project Hydra described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r001", "question": "What is the chunk length used by Project Orion?", "route": "needs-RAG"}
+{"id": "r178", "question": "Is Project Perseus described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r016", "question": "What is the release date of Project Lyra 2.2?", "route": "needs-RAG"}
+{"id": "r047", "question": "Which release version is documented for Project Sirius?", "route": "needs-RAG"}
+{"id": "r176", "question": "What is the release date of Project Perseus 3.4?", "route": "needs-RAG"}
+{"id": "g003", "question": "What is MAE?", "route": "direct"}
+{"id": "r172", "question": "What stride does Project Perseus use for chunking?", "route": "needs-RAG"}
+{"id": "g017", "question": "What is Docker?", "route": "direct"}
+{"id": "r132", "question": "What stride does Project Pegasus use for chunking?", "route": "needs-RAG"}
+{"id": "g007", "question": "What is canary release?", "route": "direct"}
+{"id": "r195", "question": "What similarity metric is set for Project Helios?", "route": "needs-RAG"}
+{"id": "r074", "question": "What Chroma collection does Project Quasar use?", "route": "needs-RAG"}
+{"id": "r043", "question": "Which embedding model is configured for Project Sirius?", "route": "needs-RAG"}
+{"id": "r196", "question": "What is the release date of Project Helios 2.8?", "route": "needs-RAG"}
+{"id": "r011", "question": "What is the chunk length used by Project Lyra?", "route": "needs-RAG"}
+{"id": "r080", "question": "What is the default retrieval store for Project Quasar?", "route": "needs-RAG"}
+{"id": "r099", "question": "What does the documentation of Project Cosmos cover?", "route": "needs-RAG"}
+{"id": "g085", "question": "What is observability?", "route": "direct"}
+{"id": "g025", "question": "What is R-squared?", "route": "direct"}
+{"id": "r025", "question": "What similarity metric is set for Project Vega?", "route": "needs-RAG"}
+{"id": "r188", "question": "Is Project Andromeda described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r004", "question": "What Chroma collection does Project Orion use?", "route": "needs-RAG"}
+{"id": "g030", "question": "What is regularization?", "route": "direct"}
+{"id": "r198", "question": "Is Project Helios described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r096", "question": "What is the release date of Project Cosmos 1.8?", "route": "needs-RAG"}
+{"id": "r058", "question": "Is Project Nova described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "g024", "question": "What is container?", "route": "direct"}
+{"id": "r042", "question": "What stride does Project Sirius use for chunking?", "route": "needs-RAG"}
+{"id": "r026", "question": "What is the release date of Project Vega 3.4?", "route": "needs-RAG"}
+{"id": "g068", "question": "What is LRU cache?", "route": "direct"}
+{"id": "r102", "question": "What stride does Project Phoenix use for chunking?", "route": "needs-RAG"}
+{"id": "g073", "question": "What is stationarity?", "route": "direct"}
+{"id": "r073", "question": "Which embedding model is configured for Project Quasar?", "route": "needs-RAG"}
+{"id": "r110", "question": "What is the default retrieval store for Project Phoenix?", "route": "needs-RAG"}
+{"id": "r109", "question": "What does the documentation of Project Phoenix cover?", "route": "needs-RAG"}
+{"id": "r005", "question": "What similarity metric is set for Project Orion?", "route": "needs-RAG"}
+{"id": "g056", "question": "What is HTTP?", "route": "direct"}
+{"id": "g070", "question": "What is tokenization?", "route": "direct"}
+{"id": "r183", "question": "Which embedding model is configured for Project Andromeda?", "route": "needs-RAG"}
+{"id": "r135", "question": "What similarity metric is set for Project Pegasus?", "route": "needs-RAG"}
+{"id": "r191", "question": "What is the chunk length used by Project Helios?", "route": "needs-RAG"}
+{"id": "r054", "question": "What Chroma collection does Project Nova use?", "route": "needs-RAG"}
+{"id": "r032", "question": "What stride does Project Altair use for chunking?", "route": "needs-RAG"}
+{"id": "g029", "question": "What is throughput?", "route": "direct"}
+{"id": "r190", "question": "What is the default retrieval store for Project Andromeda?", "route": "needs-RAG"}
+{"id": "r136", "question": "What is the release date of Project Pegasus 2.6?", "route": "needs-RAG"}
+{"id": "r092", "question": "What stride does Project Cosmos use for chunking?", "route": "needs-RAG"}
+{"id": "g019", "question": "What is AUC?", "route": "direct"}
+{"id": "r192", "question": "What stride does Project Helios use for chunking?", "route": "needs-RAG"}
+{"id": "g020", "question": "What is PCA?", "route": "direct"}
+{"id": "r152", "question": "What stride does Project Cygnus use for chunking?", "route": "needs-RAG"}
+{"id": "r039", "question": "What does the documentation of Project Altair cover?", "route": "needs-RAG"}
+{"id": "r044", "question": "What Chroma collection does Project Sirius use?", "route": "needs-RAG"}
+{"id": "g088", "question": "What is rate limiting?", "route": "direct"}
+{"id": "r118", "question": "Is Project Draco described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r045", "question": "What similarity metric is set for Project Sirius?", "route": "needs-RAG"}
+{"id": "r119", "question": "What does the documentation of Project Draco cover?", "route": "needs-RAG"}
+{"id": "g010", "question": "What is JSON?", "route": "direct"}
+{"id": "r094", "question": "What Chroma collection does Project Cosmos use?", "route": "needs-RAG"}
+{"id": "r084", "question": "What Chroma collection does Project Nebula use?", "route": "needs-RAG"}
+{"id": "r130", "question": "What is the default retrieval store for Project Hydra?", "route": "needs-RAG"}
+{"id": "r168", "question": "Is Project Argo described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "g054", "question": "What is load balancer?", "route": "direct"}
+{"id": "g018", "question": "What is microservice?", "route": "direct"}
+{"id": "r175", "question": "What similarity metric is set for Project Perseus?", "route": "needs-RAG"}
+{"id": "r009", "question": "What does the documentation of Project Orion cover?", "route": "needs-RAG"}
+{"id": "r131", "question": "What is the chunk length used by Project Pegasus?", "route": "needs-RAG"}
+{"id": "r048", "question": "Is Project Sirius described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r059", "question": "What does the documentation of Project Nova cover?", "route": "needs-RAG"}
+{"id": "r081", "question": "What is the chunk length used by Project Nebula?", "route": "needs-RAG"}
+{"id": "g032", "question": "What is seasonality?", "route": "direct"}
+{"id": "r115", "question": "What similarity metric is set for Project Draco?", "route": "needs-RAG"}
+{"id": "r062", "question": "What stride does Project Pulsar use for chunking?", "route": "needs-RAG"}
+{"id": "g069", "question": "What is blue/green deployment?", "route": "direct"}
+{"id": "r010", "question": "What is the default retrieval store for Project Orion?", "route": "needs-RAG"}
+{"id": "r180", "question": "What is the default retrieval store for Project Perseus?", "route": "needs-RAG"}
+{"id": "r153", "question": "Which embedding model is configured for Project Cygnus?", "route": "needs-RAG"}
+{"id": "r120", "question": "What is the default retrieval store for Project Draco?", "route": "needs-RAG"}
+{"id": "g026", "question": "What is tracing?", "route": "direct"}
+{"id": "g066", "question": "What is retry policy?", "route": "direct"}
+{"id": "g078", "question": "What is moving average?", "route": "direct"}
+{"id": "r108", "question": "Is Project Phoenix described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "g079", "question": "What is ARIMA?", "route": "direct"}
+{"id": "g042", "question": "What is TF-IDF?", "route": "direct"}
+{"id": "r134", "question": "What Chroma collection does Project Pegasus use?", "route": "needs-RAG"}
+{"id": "g009", "question": "What is data lake?", "route": "direct"}
+{"id": "r156", "question": "What is the release date of Project Cygnus 1.0?", "route": "needs-RAG"}
+{"id": "r140", "question": "What is the default retrieval store for Project Pegasus?", "route": "needs-RAG"}
+{"id": "g098", "question": "What is TCP?", "route": "direct"}
+{"id": "r075", "question": "What similarity metric is set for Project Quasar?", "route": "needs-RAG"}
+{"id": "r147", "question": "Which release version is documented for Project Aquila?", "route": "needs-RAG"}
+{"id": "g058", "question": "What is TLS?", "route": "direct"}
+{"id": "r066", "question": "What is the release date of Project Pulsar 1.2?", "route": "needs-RAG"}
+{"id": "g013", "question": "What is batch size?", "route": "direct"}
+{"id": "g099", "question": "What is logging?", "route": "direct"}
+{"id": "r181", "question": "What is the chunk length used by Project Andromeda?", "route": "needs-RAG"}
+{"id": "r071", "question": "What is the chunk length used by Project Quasar?", "route": "needs-RAG"}
+{"id": "g049", "question": "What is REST API?", "route": "direct"}
+{"id": "g064", "question": "What is F1 score?", "route": "direct"}
+{"id": "g015", "question": "What is metrics?", "route": "direct"}
+{"id": "g028", "question": "What is epoch?", "route": "direct"}
+{"id": "r127", "question": "Which release version is documented for Project Hydra?", "route": "needs-RAG"}
+{"id": "r126", "question": "What is the release date of Project Hydra 1.4?", "route": "needs-RAG"}
+{"id": "r142", "question": "What stride does Project Aquila use for chunking?", "route": "needs-RAG"}
+{"id": "r124", "question": "What Chroma collection does Project Hydra use?", "route": "needs-RAG"}
+{"id": "r111", "question": "What is the chunk length used by Project Draco?", "route": "needs-RAG"}
+{"id": "r199", "question": "What does the documentation of Project Helios cover?", "route": "needs-RAG"}
+{"id": "g045", "question": "What is SLA?", "route": "direct"}
+{"id": "r046", "question": "What is the release date of Project Sirius 2.8?", "route": "needs-RAG"}
+{"id": "g002", "question": "What is cache?", "route": "direct"}
+{"id": "r169", "question": "What does the documentation of Project Argo cover?", "route": "needs-RAG"}
+{"id": "r013", "question": "Which embedding model is configured for Project Lyra?", "route": "needs-RAG"}
+{"id": "g005", "question": "What is logging?", "route": "direct"}
+{"id": "r031", "question": "What is the chunk length used by Project Altair?", "route": "needs-RAG"}
+{"id": "r072", "question": "What stride does Project Quasar use for chunking?", "route": "needs-RAG"}
+{"id": "r090", "question": "What is the default retrieval store for Project Nebula?", "route": "needs-RAG"}
+{"id": "r037", "question": "Which release version is documented for Project Altair?", "route": "needs-RAG"}
+{"id": "r056", "question": "What is the release date of Project Nova 3.0?", "route": "needs-RAG"}
+{"id": "r104", "question": "What Chroma collection does Project Phoenix use?", "route": "needs-RAG"}
+{"id": "r112", "question": "What stride does Project Draco use for chunking?", "route": "needs-RAG"}
+{"id": "r154", "question": "What Chroma collection does Project Cygnus use?", "route": "needs-RAG"}
+{"id": "r050", "question": "What is the default retrieval store for Project Sirius?", "route": "needs-RAG"}
+{"id": "r018", "question": "Is Project Lyra described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "g091", "question": "What is availability?", "route": "direct"}
+{"id": "g016", "question": "What is dead letter queue?", "route": "direct"}
+{"id": "r077", "question": "Which release version is documented for Project Quasar?", "route": "needs-RAG"}
+{"id": "r008", "question": "Is Project Orion described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r040", "question": "What is the default retrieval store for Project Altair?", "route": "needs-RAG"}
+{"id": "r145", "question": "What similarity metric is set for Project Aquila?", "route": "needs-RAG"}
+{"id": "g084", "question": "What is linear regression?", "route": "direct"}
+{"id": "r051", "question": "What is the chunk length used by Project Nova?", "route": "needs-RAG"}
+{"id": "g062", "question": "What is dropout?", "route": "direct"}
+{"id": "r029", "question": "What does the documentation of Project Vega cover?", "route": "needs-RAG"}
+{"id": "g075", "question": "What is SLO?", "route": "direct"}
+{"id": "r193", "question": "Which embedding model is configured for Project Helios?", "route": "needs-RAG"}
+{"id": "g065", "question": "What is cosine similarity?", "route": "direct"}
+{"id": "r097", "question": "Which release version is documented for Project Cosmos?", "route": "needs-RAG"}
+{"id": "g055", "question": "What is time series?", "route": "direct"}
+{"id": "r144", "question": "What Chroma collection does Project Aquila use?", "route": "needs-RAG"}
+{"id": "r157", "question": "Which release version is documented for Project Cygnus?", "route": "needs-RAG"}
+{"id": "g036", "question": "What is learning rate?", "route": "direct"}
+{"id": "r035", "question": "What similarity metric is set for Project Altair?", "route": "needs-RAG"}
+{"id": "r133", "question": "Which embedding model is configured for Project Pegasus?", "route": "needs-RAG"}
+{"id": "r067", "question": "Which release version is documented for Project Pulsar?", "route": "needs-RAG"}
+{"id": "g004", "question": "What is TCP?", "route": "direct"}
+{"id": "g006", "question": "What is Kubernetes?", "route": "direct"}
+{"id": "g034", "question": "What is idempotency?", "route": "direct"}
+{"id": "r079", "question": "What does the documentation of Project Quasar cover?", "route": "needs-RAG"}
+{"id": "r041", "question": "What is the chunk length used by Project Sirius?", "route": "needs-RAG"}
+{"id": "g040", "question": "What is ROC curve?", "route": "direct"}
+{"id": "r137", "question": "Which release version is documented for Project Pegasus?", "route": "needs-RAG"}
+{"id": "r161", "question": "What is the chunk length used by Project Argo?", "route": "needs-RAG"}
+{"id": "r022", "question": "What stride does Project Vega use for chunking?", "route": "needs-RAG"}
+{"id": "r170", "question": "What is the default retrieval store for Project Argo?", "route": "needs-RAG"}
+{"id": "r125", "question": "What similarity metric is set for Project Hydra?", "route": "needs-RAG"}
+{"id": "g038", "question": "What is standardization?", "route": "direct"}
+{"id": "r121", "question": "What is the chunk length used by Project Hydra?", "route": "needs-RAG"}
+{"id": "r020", "question": "What is the default retrieval store for Project Lyra?", "route": "needs-RAG"}
+{"id": "r052", "question": "What stride does Project Nova use for chunking?", "route": "needs-RAG"}
+{"id": "g039", "question": "What is encoder?", "route": "direct"}
+{"id": "r149", "question": "What does the documentation of Project Aquila cover?", "route": "needs-RAG"}
+{"id": "g033", "question": "What is partition tolerance?", "route": "direct"}
+{"id": "r184", "question": "What Chroma collection does Project Andromeda use?", "route": "needs-RAG"}
+{"id": "g041", "question": "What is UDP?", "route": "direct"}
+{"id": "r138", "question": "Is Project Pegasus described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r117", "question": "Which release version is documented for Project Draco?", "route": "needs-RAG"}
+{"id": "r091", "question": "What is the chunk length used by Project Cosmos?", "route": "needs-RAG"}
+{"id": "r003", "question": "Which embedding model is configured for Project Orion?", "route": "needs-RAG"}
+{"id": "r019", "question": "What does the documentation of Project Lyra cover?", "route": "needs-RAG"}
+{"id": "r002", "question": "What stride does Project Orion use for chunking?", "route": "needs-RAG"}
+{"id": "r085", "question": "What similarity metric is set for Project Nebula?", "route": "needs-RAG"}
+{"id": "g023", "question": "What is normalization?", "route": "direct"}
+{"id": "r177", "question": "Which release version is documented for Project Perseus?", "route": "needs-RAG"}
+{"id": "r063", "question": "Which embedding model is configured for Project Pulsar?", "route": "needs-RAG"}
+{"id": "r186", "question": "What is the release date of Project Andromeda 1.6?", "route": "needs-RAG"}
+{"id": "r012", "question": "What stride does Project Lyra use for chunking?", "route": "needs-RAG"}
+{"id": "g046", "question": "What is ELT?", "route": "direct"}
+{"id": "r122", "question": "What stride does Project Hydra use for chunking?", "route": "needs-RAG"}
+{"id": "r155", "question": "What similarity metric is set for Project Cygnus?", "route": "needs-RAG"}
+{"id": "r197", "question": "Which release version is documented for Project Helios?", "route": "needs-RAG"}
+{"id": "r164", "question": "What Chroma collection does Project Argo use?", "route": "needs-RAG"}
+{"id": "r101", "question": "What is the chunk length used by Project Phoenix?", "route": "needs-RAG"}
+{"id": "r159", "question": "What does the documentation of Project Cygnus cover?", "route": "needs-RAG"}
+{"id": "g031", "question": "What is one-hot encoding?", "route": "direct"}
+{"id": "r070", "question": "What is the default retrieval store for Project Pulsar?", "route": "needs-RAG"}
+{"id": "r114", "question": "What Chroma collection does Project Draco use?", "route": "needs-RAG"}
+{"id": "g022", "question": "What is recall?", "route": "direct"}
+{"id": "r065", "question": "What similarity metric is set for Project Pulsar?", "route": "needs-RAG"}
+{"id": "r105", "question": "What similarity metric is set for Project Phoenix?", "route": "needs-RAG"}
+{"id": "r141", "question": "What is the chunk length used by Project Aquila?", "route": "needs-RAG"}
+{"id": "r068", "question": "Is Project Pulsar described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r162", "question": "What stride does Project Argo use for chunking?", "route": "needs-RAG"}
+{"id": "g001", "question": "What is decoder?", "route": "direct"}
+{"id": "r116", "question": "What is the release date of Project Draco 3.2?", "route": "needs-RAG"}
+{"id": "r057", "question": "Which release version is documented for Project Nova?", "route": "needs-RAG"}
+{"id": "r185", "question": "What similarity metric is set for Project Andromeda?", "route": "needs-RAG"}
+{"id": "r024", "question": "What Chroma collection does Project Vega use?", "route": "needs-RAG"}
+{"id": "r182", "question": "What stride does Project Andromeda use for chunking?", "route": "needs-RAG"}
+{"id": "g087", "question": "What is gradient boosting?", "route": "direct"}
+{"id": "g051", "question": "What is DNS?", "route": "direct"}
+{"id": "r179", "question": "What does the documentation of Project Perseus cover?", "route": "needs-RAG"}
+{"id": "g059", "question": "What is replication?", "route": "direct"}
+{"id": "g027", "question": "What is underfitting?", "route": "direct"}
+{"id": "g057", "question": "What is backpressure?", "route": "direct"}
+{"id": "g021", "question": "What is feature flag?", "route": "direct"}
+{"id": "g094", "question": "What is GraphQL?", "route": "direct"}
+{"id": "g090", "question": "What is logistic regression?", "route": "direct"}
+{"id": "r173", "question": "Which embedding model is configured for Project Perseus?", "route": "needs-RAG"}
+{"id": "r107", "question": "Which release version is documented for Project Phoenix?", "route": "needs-RAG"}
+{"id": "r160", "question": "What is the default retrieval store for Project Cygnus?", "route": "needs-RAG"}
+{"id": "g089", "question": "What is DBSCAN?", "route": "direct"}
+{"id": "r055", "question": "What similarity metric is set for Project Nova?", "route": "needs-RAG"}
+{"id": "r194", "question": "What Chroma collection does Project Helios use?", "route": "needs-RAG"}
+{"id": "g050", "question": "What is lag feature?", "route": "direct"}
+{"id": "g067", "question": "What is hashing?", "route": "direct"}
+{"id": "r021", "question": "What is the chunk length used by Project Vega?", "route": "needs-RAG"}
+{"id": "g072", "question": "What is Bloom filter?", "route": "direct"}
+{"id": "r103", "question": "Which embedding model is configured for Project Phoenix?", "route": "needs-RAG"}
+{"id": "r189", "question": "What does the documentation of Project Andromeda cover?", "route": "needs-RAG"}
+{"id": "g008", "question": "What is RMSE?", "route": "direct"}
+{"id": "r167", "question": "Which release version is documented for Project Argo?", "route": "needs-RAG"}
+{"id": "g092", "question": "What is ETL?", "route": "direct"}
+{"id": "r027", "question": "Which release version is documented for Project Vega?", "route": "needs-RAG"}
+{"id": "r033", "question": "Which embedding model is configured for Project Altair?", "route": "needs-RAG"}
+{"id": "g052", "question": "What is pub/sub?", "route": "direct"}
+{"id": "r017", "question": "Which release version is documented for Project Lyra?", "route": "needs-RAG"}
+{"id": "r106", "question": "What is the release date of Project Phoenix 2.0?", "route": "needs-RAG"}
+{"id": "r023", "question": "Which embedding model is configured for Project Vega?", "route": "needs-RAG"}
+{"id": "g100", "question": "What is Kubernetes?", "route": "direct"}
+{"id": "r163", "question": "Which embedding model is configured for Project Argo?", "route": "needs-RAG"}
+{"id": "r069", "question": "What does the documentation of Project Pulsar cover?", "route": "needs-RAG"}
+{"id": "r158", "question": "Is Project Cygnus described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r015", "question": "What similarity metric is set for Project Lyra?", "route": "needs-RAG"}
+{"id": "r083", "question": "Which embedding model is configured for Project Nebula?", "route": "needs-RAG"}
+{"id": "g086", "question": "What is SQL?", "route": "direct"}
+{"id": "r088", "question": "Is Project Nebula described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r166", "question": "What is the release date of Project Argo 2.2?", "route": "needs-RAG"}
+{"id": "r034", "question": "What Chroma collection does Project Altair use?", "route": "needs-RAG"}
+{"id": "g047", "question": "What is overfitting?", "route": "direct"}
+{"id": "r053", "question": "Which embedding model is configured for Project Nova?", "route": "needs-RAG"}
+{"id": "r200", "question": "What is the default retrieval store for Project Helios?", "route": "needs-RAG"}
+{"id": "g076", "question": "What is transformer?", "route": "direct"}
+{"id": "r086", "question": "What is the release date of Project Nebula 3.6?", "route": "needs-RAG"}
+{"id": "r171", "question": "What is the chunk length used by Project Perseus?", "route": "needs-RAG"}
+{"id": "r006", "question": "What is the release date of Project Orion 1.0?", "route": "needs-RAG"}
+{"id": "g012", "question": "What is message queue?", "route": "direct"}
+{"id": "r165", "question": "What similarity metric is set for Project Argo?", "route": "needs-RAG"}
+{"id": "g083", "question": "What is orchestrator?", "route": "direct"}
+{"id": "r187", "question": "Which release version is documented for Project Andromeda?", "route": "needs-RAG"}
+{"id": "r036", "question": "What is the release date of Project Altair 1.6?", "route": "needs-RAG"}
+{"id": "r076", "question": "What is the release date of Project Quasar 2.4?", "route": "needs-RAG"}
+{"id": "g053", "question": "What is consistency?", "route": "direct"}
+{"id": "g074", "question": "What is circuit breaker?", "route": "direct"}
+{"id": "g044", "question": "What is SLI?", "route": "direct"}
+{"id": "r060", "question": "What is the default retrieval store for Project Nova?", "route": "needs-RAG"}
+{"id": "r148", "question": "Is Project Aquila described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r146", "question": "What is the release date of Project Aquila 3.8?", "route": "needs-RAG"}
+{"id": "r139", "question": "What does the documentation of Project Pegasus cover?", "route": "needs-RAG"}
+{"id": "r150", "question": "What is the default retrieval store for Project Aquila?", "route": "needs-RAG"}
+{"id": "g060", "question": "What is YAML?", "route": "direct"}
+{"id": "g063", "question": "What is confusion matrix?", "route": "direct"}
+{"id": "r143", "question": "Which embedding model is configured for Project Aquila?", "route": "needs-RAG"}
+{"id": "r087", "question": "Which release version is documented for Project Nebula?", "route": "needs-RAG"}
+{"id": "r078", "question": "Is Project Quasar described as CPU-based deployment?", "route": "needs-RAG"}
+{"id": "r030", "question": "What is the default retrieval store for Project Vega?", "route": "needs-RAG"}
+{"id": "g077", "question": "What is k-means?", "route": "direct"}
+{"id": "r093", "question": "Which embedding model is configured for Project Cosmos?", "route": "needs-RAG"}
+{"id": "r007", "question": "Which release version is documented for Project Orion?", "route": "needs-RAG"}
+{"id": "g037", "question": "What is latency?", "route": "direct"}
+{"id": "g014", "question": "What is CDN?", "route": "direct"}

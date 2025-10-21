@@ -1,0 +1,6 @@
+Project Hydra — Release 1.4 (2024-01-23)
+
+Chunking: length 384 tokens, stride 96 tokens.
+Embedding model: BAAI/bge-small-en-v1.5.
+Vector store: Chroma collection 'kb_hydra' with metric 'l2'.
+Notes: This document describes Hydra's retrieval defaults and deployment parameters on CPU.

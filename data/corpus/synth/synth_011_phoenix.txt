@@ -1,0 +1,6 @@
+Project Phoenix — Release 2.0 (2024-11-21)
+
+Chunking: length 512 tokens, stride 160 tokens.
+Embedding model: sentence-transformers/all-MiniLM-L6-v2.
+Vector store: Chroma collection 'kb_phoenix' with metric 'l2'.
+Notes: This document describes Phoenix's retrieval defaults and deployment parameters on CPU.

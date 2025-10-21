@@ -1,0 +1,6 @@
+Project Quasar — Release 2.4 (2024-08-18)
+
+Chunking: length 384 tokens, stride 160 tokens.
+Embedding model: Alibaba-NLP/gte-small.
+Vector store: Chroma collection 'kb_quasar' with metric 'dot'.
+Notes: This document describes Quasar's retrieval defaults and deployment parameters on CPU.

@@ -1,0 +1,6 @@
+Project Orion — Release 1.0 (2024-01-11)
+
+Chunking: length 640 tokens, stride 160 tokens.
+Embedding model: intfloat/e5-small.
+Vector store: Chroma collection 'kb_orion' with metric 'cosine'.
+Notes: This document describes Orion's retrieval defaults and deployment parameters on CPU.

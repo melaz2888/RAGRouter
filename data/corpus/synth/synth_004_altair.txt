@@ -1,0 +1,6 @@
+Project Altair — Release 1.6 (2024-04-14)
+
+Chunking: length 640 tokens, stride 128 tokens.
+Embedding model: Alibaba-NLP/gte-small.
+Vector store: Chroma collection 'kb_altair' with metric 'l2'.
+Notes: This document describes Altair's retrieval defaults and deployment parameters on CPU.

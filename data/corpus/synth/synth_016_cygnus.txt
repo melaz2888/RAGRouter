@@ -1,0 +1,6 @@
+Project Cygnus — Release 1.0 (2024-04-26)
+
+Chunking: length 384 tokens, stride 160 tokens.
+Embedding model: microsoft/mpnet-base.
+Vector store: Chroma collection 'kb_cygnus' with metric 'dot'.
+Notes: This document describes Cygnus's retrieval defaults and deployment parameters on CPU.

@@ -1,0 +1,6 @@
+Project Nova — Release 3.0 (2024-06-16)
+
+Chunking: length 384 tokens, stride 64 tokens.
+Embedding model: Alibaba-NLP/gte-small.
+Vector store: Chroma collection 'kb_nova' with metric 'cosine'.
+Notes: This document describes Nova's retrieval defaults and deployment parameters on CPU.

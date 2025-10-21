@@ -1,0 +1,6 @@
+Project Vega — Release 3.4 (2024-03-13)
+
+Chunking: length 256 tokens, stride 64 tokens.
+Embedding model: sentence-transformers/all-MiniLM-L6-v2.
+Vector store: Chroma collection 'kb_vega' with metric 'l2'.
+Notes: This document describes Vega's retrieval defaults and deployment parameters on CPU.

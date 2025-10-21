@@ -1,0 +1,6 @@
+Project Sirius — Release 2.8 (2024-05-15)
+
+Chunking: length 512 tokens, stride 64 tokens.
+Embedding model: Alibaba-NLP/gte-small.
+Vector store: Chroma collection 'kb_sirius' with metric 'dot'.
+Notes: This document describes Sirius's retrieval defaults and deployment parameters on CPU.

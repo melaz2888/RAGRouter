@@ -1,0 +1,6 @@
+Project Draco — Release 3.2 (2024-12-22)
+
+Chunking: length 640 tokens, stride 96 tokens.
+Embedding model: BAAI/bge-small-en-v1.5.
+Vector store: Chroma collection 'kb_draco' with metric 'cosine'.
+Notes: This document describes Draco's retrieval defaults and deployment parameters on CPU.

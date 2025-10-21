@@ -1,0 +1,6 @@
+Project Nebula — Release 3.6 (2024-09-19)
+
+Chunking: length 256 tokens, stride 96 tokens.
+Embedding model: Alibaba-NLP/gte-small.
+Vector store: Chroma collection 'kb_nebula' with metric 'dot'.
+Notes: This document describes Nebula's retrieval defaults and deployment parameters on CPU.

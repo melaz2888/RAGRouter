@@ -1,0 +1,6 @@
+Project Helios — Release 2.8 (2024-08-02)
+
+Chunking: length 640 tokens, stride 160 tokens.
+Embedding model: intfloat/e5-small.
+Vector store: Chroma collection 'kb_helios' with metric 'cosine'.
+Notes: This document describes Helios's retrieval defaults and deployment parameters on CPU.

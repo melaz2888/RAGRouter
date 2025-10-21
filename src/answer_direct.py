@@ -1,6 +1,6 @@
 import time, requests
 from .config import OLLAMA_HOST, OLLAMA_MODEL
-from .types import DirectAnswer
+from .rag_types import DirectAnswer
 
 def answer_direct(question: str, temperature: float = 0.2) -> DirectAnswer:
     t0 = time.time()
