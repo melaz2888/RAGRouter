@@ -10,9 +10,17 @@ from __future__ import annotations
 import os, re, time, requests
 from typing import List, Dict, Any
 
-from .rag_types import Passage, RagAnswer
+from .types import Passage, RagAnswer
 from .config import OLLAMA_HOST, OLLAMA_MODEL, TOPK_DEFAULT, K_CTX_DEFAULT
 from .retriever import retrieve
+import re
+_tok_re = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9]{3,}")
+def _tokset(s:str): return set(_tok_re.findall((s or "").lower()))
+def _overlap_frac(q:str, t:str)->float:
+    tq, tt = _tokset(q), _tokset(t)
+    if not tq or not tt: return 0.0
+    return len(tq & tt) / len(tq)
+
 
 _USE_MMR = os.getenv("USE_MMR", "false").lower() in {"1", "true", "yes"}
 
@@ -86,6 +94,8 @@ def _call_ollama(prompt: str) -> str:
 def answer_rag(question: str, topk: int = TOPK_DEFAULT, k_ctx: int = K_CTX_DEFAULT) -> RagAnswer:
     t0 = time.time()
     cands = retrieve(question, k=topk)
+    cands = [p for p in cands if _overlap_frac(question, p.text) >= 0.20]
+
     ctx = _select_ctx(cands, k_ctx=k_ctx)
     prompt = _build_prompt(question, ctx)
     ans = _call_ollama(prompt)
