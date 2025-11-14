@@ -1,3 +1,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.venv/
+.venv*/
+*/__pycache__/
+*.py[cod]
+*$py.class
+.uvicorn.out
+.uvicorn.err
