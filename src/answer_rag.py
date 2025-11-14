@@ -10,7 +10,7 @@ from __future__ import annotations
 import os, re, time, requests
 from typing import List, Dict, Any
 
-from .types import Passage, RagAnswer
+from .rag_types import Passage, RagAnswer
 from .config import OLLAMA_HOST, OLLAMA_MODEL, TOPK_DEFAULT, K_CTX_DEFAULT
 from .retriever import retrieve
 import re
