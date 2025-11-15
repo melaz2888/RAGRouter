@@ -1,0 +1,15 @@
+.venv/
+.venv*/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+data/
+docker/
+reports/
+scripts/
+*.sh
+*.bat
+Dockerfile
+docker-compose.yml

@@ -1,10 +1,12 @@
 fastapi==0.115.0
 uvicorn==0.30.6
-streamlit==1.39.0          # only if you want the UI on Azure
+streamlit==1.39.0
 requests==2.32.3
 pydantic==2.9.2
-chromadb==0.5.11           # client for your Docker chroma
+tiktoken==0.7.0
+chromadb==0.5.11
 sentence-transformers==2.7.0
 scikit-learn==1.5.2
 rank-bm25==0.2.2
+spacy==3.7.5
 joblib==1.4.2
