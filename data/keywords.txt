@@ -1,0 +1,6 @@
+# Domain keywords - one per line
+# Questions containing these words will always use RAG
+# Example:
+# ProjectX
+# internal API
+# company policy
