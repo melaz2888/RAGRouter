@@ -16,7 +16,7 @@ This routing mechanism cuts end-to-end latency and compute cost while preserving
 ---
 
 ## Architecture
-![RAGRouter architecture](images/ragrouter_arch.png)
+![RAGRouter architecture](images/rag_router_schema.png)
 
 ```
 User Query
