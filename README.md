@@ -64,10 +64,10 @@ docker compose -f docker/docker-compose.yml up -d
 docker exec -it ollama ollama pull qwen2.5:0.5b-instruct
 
 # ingest corpus into Chroma (run once per corpus update)
-python -m src.ingest_docs --corpus data/corpus/synth --collection kb_main --model intfloat/e5-small --batch-size 64
+python scripts/ingest.py --corpus data/corpus/synth
 
 # launch API
-uvicorn src.service_api:app --port 8008 --reload
+uvicorn src.api:app --port 8008 --reload
 
 # optional: run Streamlit demo
 python -m streamlit run ui/app.py
