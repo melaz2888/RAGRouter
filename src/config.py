@@ -13,13 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 CORPUS_DIR = DATA_DIR / "corpus"
-MODELS_DIR = ROOT / "models"
 KEYWORDS_FILE = DATA_DIR / "keywords.txt"
-LABELS_FILE = DATA_DIR / "labels.jsonl"
-
-# Model artifacts
-ROUTER_MODEL_PATH = MODELS_DIR / "router.joblib"
-TFIDF_MODEL_PATH = MODELS_DIR / "tfidf.joblib"
 
 # =============================================================================
 # OLLAMA (LLM)
@@ -69,12 +63,10 @@ CONTEXT_TOP_K = 3      # number of passages to include in prompt
 # ROUTER
 # =============================================================================
 
-# Default route when classifier is not available
-DEFAULT_ROUTE = "rag"
-
-# Classifier settings
-ROUTER_TRAIN_TEST_SPLIT = 0.2
-ROUTER_RANDOM_SEED = 42
+# Similarity-based routing threshold
+# If question similarity to corpus >= threshold -> rag (domain question)
+# If question similarity to corpus < threshold -> direct (general question)
+ROUTER_SIMILARITY_THRESHOLD = 0.84
 
 # =============================================================================
 # API

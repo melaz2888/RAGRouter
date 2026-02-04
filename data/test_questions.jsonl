@@ -1,0 +1,24 @@
+{"question": "How do I simulate a lossy system with a jump operator sqrt(kappa)*a in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "What is the Lindblad master equation in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "How do I use dq.mesolve to simulate open quantum systems?", "expected_route": "rag", "category": "domain"}
+{"question": "How can I batch simulations over different Hamiltonians in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "What solvers are available in dynamiqs for the Schrodinger equation?", "expected_route": "rag", "category": "domain"}
+{"question": "How do I compute gradients of a quantum simulation in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "How to define a time-dependent Hamiltonian in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "What is the difference between mesolve and sesolve in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "How do I install dynamiqs with GPU support?", "expected_route": "rag", "category": "domain"}
+{"question": "How to simulate a Kerr oscillator using dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "What is the propagator method in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "How do I create a density matrix in dynamiqs?", "expected_route": "rag", "category": "domain"}
+{"question": "What is 2 + 2?", "expected_route": "direct", "category": "general"}
+{"question": "What is the capital of France?", "expected_route": "direct", "category": "general"}
+{"question": "Who wrote Romeo and Juliet?", "expected_route": "direct", "category": "general"}
+{"question": "What is photosynthesis?", "expected_route": "direct", "category": "general"}
+{"question": "How many planets are in the solar system?", "expected_route": "direct", "category": "general"}
+{"question": "What year did World War 2 end?", "expected_route": "direct", "category": "general"}
+{"question": "What is the chemical formula for water?", "expected_route": "direct", "category": "general"}
+{"question": "Who painted the Mona Lisa?", "expected_route": "direct", "category": "general"}
+{"question": "What is the speed of light?", "expected_route": "direct", "category": "general"}
+{"question": "What is machine learning?", "expected_route": "direct", "category": "general"}
+{"question": "How do I cook pasta?", "expected_route": "direct", "category": "general"}
+{"question": "What is the population of Tokyo?", "expected_route": "direct", "category": "general"}

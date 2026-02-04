@@ -173,10 +173,10 @@ def _get_collection(client=None):
 
 def ingest_documents(corpus_dir: str = None) -> dict:
     """
-    Ingest all .txt files from corpus directory into ChromaDB.
+    Ingest all .txt and .md files from corpus directory into ChromaDB.
 
     Args:
-        corpus_dir: Directory containing .txt files (default: config.CORPUS_DIR)
+        corpus_dir: Directory containing .txt or .md files (default: config.CORPUS_DIR)
 
     Returns:
         Summary dict with file_count and chunk_count
@@ -184,12 +184,13 @@ def ingest_documents(corpus_dir: str = None) -> dict:
     if corpus_dir is None:
         corpus_dir = str(CORPUS_DIR)
 
-    # Find all text files
-    pattern = os.path.join(corpus_dir, "**", "*.txt")
-    files = sorted(glob.glob(pattern, recursive=True))
+    # Find all text and markdown files
+    txt_pattern = os.path.join(corpus_dir, "**", "*.txt")
+    md_pattern = os.path.join(corpus_dir, "**", "*.md")
+    files = sorted(glob.glob(txt_pattern, recursive=True) + glob.glob(md_pattern, recursive=True))
 
     if not files:
-        print(f"[ingest] No .txt files found in {corpus_dir}")
+        print(f"[ingest] No .txt or .md files found in {corpus_dir}")
         return {"file_count": 0, "chunk_count": 0}
 
     print(f"[ingest] Found {len(files)} files")

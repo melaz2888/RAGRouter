@@ -75,7 +75,7 @@ A "meta-model" (router) that decides BEFORE calling retrieval:
 - **direct**: LLM answers without context (fast)
 - **rag**: Retrieve documents first, then answer (accurate)
 
-### The Hybrid Approach
+### The Approach: Similarity-Based Routing
 
 We use TWO methods combined:
 
@@ -93,60 +93,122 @@ Question arrives
     │         │
     ▼         ▼
   "rag"   ┌──────────────────┐
-          │   CLASSIFIER     │  ← ML-based (trained model)
+          │ SIMILARITY CHECK │  ← Embed query, compare to corpus
           └────────┬─────────┘
                    │
              ┌─────┴─────┐
+             │           │
+          >= 0.84     < 0.84
+             │           │
              ▼           ▼
-         "direct"      "rag"
+           "rag"     "direct"
 ```
 
 | Method | How it works | When used |
 |--------|--------------|-----------|
 | Keywords | If question contains domain terms → rag | First check, always wins |
-| Classifier | ML predicts based on question features | Only if no keyword match |
+| Similarity | Embed query, find closest chunk in corpus | Only if no keyword match |
+
+### Key Insight: Domain-Specific Knowledge
+
+The router works by detecting whether a question is about the **domain** (what's in your corpus) or **general knowledge** (what the LLM already knows).
+
+- **Domain questions** (about dynamiqs, your specific docs) → similarity score 0.84-0.93 → RAG
+- **General questions** (capitals, history, math) → similarity score 0.77-0.83 → direct
+
+The threshold (0.84) cleanly separates these two categories.
 
 ---
 
-## Router Training Pipeline
+## Failed Approaches (What We Tried Before)
 
-### Step 1: Generate Labels (scripts/label.py)
+We tried several classification approaches before settling on similarity-based routing. Here's why each failed:
 
-For each question in Natural Questions dataset:
+### v1: Token Overlap (50% threshold)
+- **Logic**: Compare LLM answer to ground truth, if ≥50% token overlap → "direct"
+- **Problem**: Too strict. 98% of questions routed to RAG, only 2% direct.
+- **Why**: Exact token matching is too rigid. LLM can give correct answers with different wording.
 
-1. Ask LLM the question (NO context, NO retrieval)
-2. Compare LLM answer to ground truth
-3. Assign label:
-   - Match (≥50% token overlap) → "direct" (LLM already knows)
-   - No match → "rag" (LLM needs help)
+### v2: Semantic Similarity (0.7 threshold)
+- **Logic**: Use embedding similarity instead of token overlap
+- **Problem**: Too lenient. 100% routed to direct, 0% to RAG.
+- **Why**: Threshold was wrong, and semantic similarity between any two texts is often high.
 
+### v3: Unsupervised Clustering (K-means)
+- **Logic**: Cluster question embeddings, let algorithm find natural groups
+- **Problem**: No ground truth to validate. Got 39% direct / 61% rag but couldn't verify correctness.
+- **Why**: Without labels, can't evaluate if the clustering is meaningful.
+
+### v4: LLM-as-Judge
+- **Logic**: Ask the small LLM to verify if its own answer is correct
+- **Problem**: Small model (qwen2.5:0.5b) unreliable as judge. Marked 95% as correct when only ~25% were.
+- **Why**: Small models don't have good self-evaluation capabilities.
+
+### The Real Problem
+
+**We were training on NQ (real-world questions) but testing on domain-specific corpus.**
+
+Natural Questions = random Wikipedia facts.
+Our corpus = dynamiqs documentation.
+
+These distributions don't match! A router trained on "Who is the president?" won't help with "How to simulate a Kerr oscillator?"
+
+### The Solution
+
+Stop trying to classify questions universally. Instead:
+1. Pick a domain (dynamiqs documentation)
+2. If question is similar to corpus → RAG (domain question)
+3. If question is NOT similar → direct (general knowledge)
+
+This is simpler and actually works.
+
+---
+
+## Current Corpus: dynamiqs
+
+We use dynamiqs documentation as our knowledge base.
+
+### Setup
 ```powershell
-python scripts/label.py --dataset nq --limit 500
+# Clone only docs folder (sparse checkout)
+git clone --filter=blob:none --sparse https://github.com/dynamiqs/dynamiqs.git data/corpus/dynamiqs
+cd data/corpus/dynamiqs
+git sparse-checkout set docs
+
+# Ingest into ChromaDB
+python scripts/ingest.py --corpus data/corpus/dynamiqs/docs
 ```
 
-Output: `data/labels.jsonl`
+### Stats
+- 22 markdown files
+- 93 chunks after splitting
+- Topics: quantum simulation, Lindblad equations, solvers, JAX integration
 
-### Step 2: Train Classifier (scripts/train.py)
+### Test Results
+With threshold 0.84:
+- Domain questions (dynamiqs): similarity 0.84-0.93 → routed to RAG
+- General questions (capitals, math): similarity 0.77-0.83 → routed to direct
+- **Accuracy: 100%** on test set of 24 questions
 
-Train a LogisticRegression on query-only features:
+---
 
-| Feature | Description |
-|---------|-------------|
-| `len_words` | Word count |
-| `len_chars` | Character count |
-| `has_number` | Contains digits (0/1) |
-| `wh_type` | what/who/where/when/why/how/other |
-| `num_entities` | Count of capitalized words |
-| `has_question_mark` | Ends with ? (0/1) |
+## Testing the Router
 
+### Test File
+`data/test_questions.jsonl` - 24 questions (12 domain, 12 general)
+
+### Run Test
 ```powershell
-python scripts/train.py
+python scripts/test_routing.py --threshold 0.84
 ```
 
-Output: `models/router.joblib`
-
-### Key Insight
-All features are derived from the question text ONLY. No retrieval needed during routing = fast decision.
+### Example Output
+```
+OK [domain] score=0.927 -> rag (expected rag)
+   How do I simulate a lossy system with a jump operator...
+OK [general] score=0.776 -> direct (expected direct)
+   What is the capital of France?
+```
 
 ---
 
@@ -154,25 +216,24 @@ All features are derived from the question text ONLY. No retrieval needed during
 
 ```
 src/
-├── config.py       # All settings (ports, paths, model names)
-├── router.py       # Keyword check + classifier
+├── config.py       # All settings (ports, paths, thresholds)
+├── router.py       # Keyword check + similarity-based routing
 ├── retriever.py    # Embedding + ChromaDB + chunking
 ├── generator.py    # LLM calls (direct + RAG prompts)
 └── api.py          # FastAPI /ask endpoint
 
 scripts/
 ├── ingest.py       # CLI: ingest documents into ChromaDB
-├── label.py        # CLI: generate training labels
-└── train.py        # CLI: train the router classifier
-
-models/
-├── router.joblib   # Trained classifier
-└── tfidf.joblib    # (optional) corpus vocabulary
+├── label.py        # CLI: generate training labels (v1-v4 experiments)
+├── train.py        # CLI: train the router classifier (legacy)
+└── test_routing.py # CLI: test similarity-based routing
 
 data/
-├── corpus/         # Documents to ingest
-├── keywords.txt    # Domain keywords (one per line)
-└── labels.jsonl    # Training labels
+├── corpus/
+│   └── dynamiqs/docs/  # dynamiqs documentation (22 files)
+├── keywords.txt        # Domain keywords (one per line)
+├── labels.jsonl        # Training labels (legacy)
+└── test_questions.jsonl # Test set (24 questions)
 ```
 
 ---
@@ -184,12 +245,11 @@ data/
 docker compose -f docker/docker-compose.yml up -d
 docker exec -it ollama ollama pull qwen2.5:0.5b-instruct
 
-# Ingest documents
-python scripts/ingest.py --corpus data/corpus/synth
+# Ingest documents (dynamiqs docs)
+python scripts/ingest.py --corpus data/corpus/dynamiqs/docs
 
-# Train router (optional - requires labeling first)
-python scripts/label.py --dataset nq --limit 500
-python scripts/train.py
+# Test routing accuracy
+python scripts/test_routing.py --threshold 0.84
 
 # Run API
 uvicorn src.api:app --port 8008 --reload
@@ -207,9 +267,23 @@ python -m streamlit run ui/app.py
 | LLM | qwen2.5:0.5b-instruct | Small, fast, CPU-friendly |
 | Embeddings | intfloat/e5-small | Good quality, requires prefixes |
 | Vector DB | ChromaDB | Simple, HTTP client, cosine similarity |
-| Classifier | LogisticRegression | Fast, interpretable, works with small data |
+| Router | Similarity threshold (0.84) | No training needed, domain-agnostic logic |
 | Chunking | 512 tokens, 128 overlap | Fits model context, preserves continuity |
 
 ---
 
-*Last updated: January 2026*
+## Key Takeaways
+
+1. **Don't over-engineer the router.** A simple similarity check works better than complex classifiers.
+
+2. **Match your training data to your corpus.** Training on NQ and testing on domain docs is a distribution mismatch.
+
+3. **Domain-specific routing is the key.** The question isn't "does the LLM know this?" but "is this question about our domain?"
+
+4. **Small LLMs can't self-evaluate.** Don't use them as judges for their own answers.
+
+5. **Threshold tuning is empirical.** Test with real domain vs general questions to find the right cutoff.
+
+---
+
+*Last updated: February 2026*
