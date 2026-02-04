@@ -4,6 +4,102 @@ Personal notes and explanations for understanding the project.
 
 ---
 
+## LATEST UPDATE (February 2026)
+
+### Current Architecture
+
+RAGRouter is a smart Q&A system that decides whether to answer directly (using LLM knowledge) or retrieve context first (RAG).
+
+```
+                           USER QUESTION
+                                 |
+                                 v
+                    +------------------------+
+                    |     FastAPI (/ask)     |
+                    +------------------------+
+                                 |
+                                 v
++------------------------------------------------------------------------+
+|                            ROUTER                                       |
+|  +------------------+     +-------------------+                         |
+|  | Keyword Check    | --> | Similarity Check  |                         |
+|  | (keywords.txt)   |     | (ChromaDB query)  |                         |
+|  +------------------+     +-------------------+                         |
+|         |                        |                                      |
+|      found?                 score >= 0.84?                              |
+|         |                        |                                      |
+|        YES                  YES     NO                                  |
+|         |                    |       |                                  |
+|         v                    v       v                                  |
+|       "rag"               "rag"   "direct"                              |
++------------------------------------------------------------------------+
+                     |                    |
+                     v                    v
+        +------------------+    +------------------+
+        |   RETRIEVER      |    |   GENERATOR      |
+        |  - Embed query   |    |  - Direct prompt |
+        |  - ChromaDB top5 |    |  - No context    |
+        |  - Return chunks |    |  - Fast response |
+        +------------------+    +------------------+
+                     |
+                     v
+        +------------------+
+        |   GENERATOR      |
+        |  - RAG prompt    |
+        |  - With context  |
+        |  - Accurate      |
+        +------------------+
+                     |
+                     v
+                  ANSWER
+```
+
+### Project Structure
+
+```
+RAGRouter/
+|
++-- src/                    # Core application code
+|   +-- config.py           # All settings (ports, models, thresholds)
+|   +-- router.py           # Routing logic (keywords + similarity)
+|   +-- retriever.py        # Embedding, chunking, ChromaDB operations
+|   +-- generator.py        # LLM calls (Ollama)
+|   +-- api.py              # FastAPI endpoints
+|
++-- scripts/                # CLI utilities
+|   +-- ingest.py           # Ingest documents into ChromaDB
+|   +-- test_routing.py     # Test routing accuracy
+|
++-- data/
+|   +-- corpus/dynamiqs/docs/   # Knowledge base (22 markdown files)
+|   +-- keywords.txt            # Domain keywords for fast routing
+|   +-- test_questions.jsonl    # Test set (24 questions)
+|
++-- docker/                 # Docker compose for Ollama + ChromaDB
++-- ui/                     # Streamlit interface
+```
+
+### How Routing Works
+
+1. **Question arrives** at `/ask` endpoint
+2. **Keyword check**: If question contains domain keywords -> RAG
+3. **Similarity check**: Embed question, find closest chunk in ChromaDB
+   - Score >= 0.84 -> RAG (domain question)
+   - Score < 0.84 -> Direct (general knowledge)
+4. **Generate answer** using appropriate path
+
+### Key Numbers
+
+| Metric | Value |
+|--------|-------|
+| Similarity threshold | 0.84 |
+| Domain questions score | 0.84 - 0.93 |
+| General questions score | 0.77 - 0.83 |
+| Test accuracy | 100% (24 questions) |
+| Corpus size | 22 files, 93 chunks |
+
+---
+
 ## Git Basics
 
 ### Local vs Remote
@@ -34,25 +130,25 @@ It's the "loading" step - like putting books on library shelves before anyone co
 
 ### The Flow
 ```
-data/corpus/*.txt
-       │
-       ▼
-┌─────────────┐
-│  Chunking   │  Split docs into 512-token pieces (128 overlap)
-│  (tiktoken) │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│  Embedding  │  Convert each chunk to a 384-dim vector
-│  (e5-small) │  Uses prefix: "passage: {text}"
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│  ChromaDB   │  Store vectors + original text
-│  (upsert)   │  Now searchable by similarity
-└─────────────┘
+data/corpus/*.txt, *.md
+       |
+       v
++-------------+
+|  Chunking   |  Split docs into 512-token pieces (128 overlap)
+|  (tiktoken) |
++------+------+
+       |
+       v
++-------------+
+|  Embedding  |  Convert each chunk to a 384-dim vector
+|  (e5-small) |  Uses prefix: "passage: {text}"
++------+------+
+       |
+       v
++-------------+
+|  ChromaDB   |  Store vectors + original text
+|  (upsert)   |  Now searchable by similarity
++-------------+
 ```
 
 ### Key Point
@@ -60,7 +156,7 @@ You ingest ONCE, query MANY times. That's why it's separate from the API.
 
 ### Command
 ```powershell
-python scripts/ingest.py --corpus data/corpus/synth
+python scripts/ingest.py --corpus data/corpus/dynamiqs/docs
 ```
 
 ---
@@ -81,40 +177,40 @@ We use TWO methods combined:
 
 ```
 Question arrives
-       │
-       ▼
-┌──────────────────┐
-│  KEYWORD CHECK   │  ← Rule-based (manual keywords.txt)
-└────────┬─────────┘
-         │
-    ┌────┴────┐
-    │         │
+       |
+       v
++------------------+
+|  KEYWORD CHECK   |  <- Rule-based (manual keywords.txt)
++--------+---------+
+         |
+    +----+----+
+    |         |
  found    not found
-    │         │
-    ▼         ▼
-  "rag"   ┌──────────────────┐
-          │ SIMILARITY CHECK │  ← Embed query, compare to corpus
-          └────────┬─────────┘
-                   │
-             ┌─────┴─────┐
-             │           │
+    |         |
+    v         v
+  "rag"   +------------------+
+          | SIMILARITY CHECK |  <- Embed query, compare to corpus
+          +--------+---------+
+                   |
+             +-----+-----+
+             |           |
           >= 0.84     < 0.84
-             │           │
-             ▼           ▼
+             |           |
+             v           v
            "rag"     "direct"
 ```
 
 | Method | How it works | When used |
 |--------|--------------|-----------|
-| Keywords | If question contains domain terms → rag | First check, always wins |
+| Keywords | If question contains domain terms -> rag | First check, always wins |
 | Similarity | Embed query, find closest chunk in corpus | Only if no keyword match |
 
 ### Key Insight: Domain-Specific Knowledge
 
 The router works by detecting whether a question is about the **domain** (what's in your corpus) or **general knowledge** (what the LLM already knows).
 
-- **Domain questions** (about dynamiqs, your specific docs) → similarity score 0.84-0.93 → RAG
-- **General questions** (capitals, history, math) → similarity score 0.77-0.83 → direct
+- **Domain questions** (about dynamiqs, your specific docs) -> similarity score 0.84-0.93 -> RAG
+- **General questions** (capitals, history, math) -> similarity score 0.77-0.83 -> direct
 
 The threshold (0.84) cleanly separates these two categories.
 
@@ -125,7 +221,7 @@ The threshold (0.84) cleanly separates these two categories.
 We tried several classification approaches before settling on similarity-based routing. Here's why each failed:
 
 ### v1: Token Overlap (50% threshold)
-- **Logic**: Compare LLM answer to ground truth, if ≥50% token overlap → "direct"
+- **Logic**: Compare LLM answer to ground truth, if >=50% token overlap -> "direct"
 - **Problem**: Too strict. 98% of questions routed to RAG, only 2% direct.
 - **Why**: Exact token matching is too rigid. LLM can give correct answers with different wording.
 
@@ -157,8 +253,8 @@ These distributions don't match! A router trained on "Who is the president?" won
 
 Stop trying to classify questions universally. Instead:
 1. Pick a domain (dynamiqs documentation)
-2. If question is similar to corpus → RAG (domain question)
-3. If question is NOT similar → direct (general knowledge)
+2. If question is similar to corpus -> RAG (domain question)
+3. If question is NOT similar -> direct (general knowledge)
 
 This is simpler and actually works.
 
@@ -186,8 +282,8 @@ python scripts/ingest.py --corpus data/corpus/dynamiqs/docs
 
 ### Test Results
 With threshold 0.84:
-- Domain questions (dynamiqs): similarity 0.84-0.93 → routed to RAG
-- General questions (capitals, math): similarity 0.77-0.83 → routed to direct
+- Domain questions (dynamiqs): similarity 0.84-0.93 -> routed to RAG
+- General questions (capitals, math): similarity 0.77-0.83 -> routed to direct
 - **Accuracy: 100%** on test set of 24 questions
 
 ---
@@ -216,24 +312,21 @@ OK [general] score=0.776 -> direct (expected direct)
 
 ```
 src/
-├── config.py       # All settings (ports, paths, thresholds)
-├── router.py       # Keyword check + similarity-based routing
-├── retriever.py    # Embedding + ChromaDB + chunking
-├── generator.py    # LLM calls (direct + RAG prompts)
-└── api.py          # FastAPI /ask endpoint
++-- config.py       # All settings (ports, paths, thresholds)
++-- router.py       # Keyword check + similarity-based routing
++-- retriever.py    # Embedding + ChromaDB + chunking
++-- generator.py    # LLM calls (direct + RAG prompts)
++-- api.py          # FastAPI /ask endpoint
 
 scripts/
-├── ingest.py       # CLI: ingest documents into ChromaDB
-├── label.py        # CLI: generate training labels (v1-v4 experiments)
-├── train.py        # CLI: train the router classifier (legacy)
-└── test_routing.py # CLI: test similarity-based routing
++-- ingest.py       # CLI: ingest documents into ChromaDB
++-- test_routing.py # CLI: test similarity-based routing
 
 data/
-├── corpus/
-│   └── dynamiqs/docs/  # dynamiqs documentation (22 files)
-├── keywords.txt        # Domain keywords (one per line)
-├── labels.jsonl        # Training labels (legacy)
-└── test_questions.jsonl # Test set (24 questions)
++-- corpus/
+|   +-- dynamiqs/docs/  # dynamiqs documentation (22 files)
++-- keywords.txt        # Domain keywords (one per line)
++-- test_questions.jsonl # Test set (24 questions)
 ```
 
 ---
